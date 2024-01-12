@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling links and buttons and psuedo selectors</title>
+    <style>
+        .main{
+        width: 500px; 
+        padding-left: 25px;
+         margin: auto;
+         background-color: aquamarine;
+         color: red;
+        }
+        a{
+            text-decoration: none;
+        }
+        /* pseudo selectors */
+        .btn:hover{
+            background-color: rgb(121, 199, 152);
+        }
+        .btn:visited{
+            background-color:white;
+        }
+        .btn:active{
+            background-color: lime;
+        }
+        h3:hover{
+            color:blue;
+            cursor: pointer;
+        }
+        .btn{
+            background-color: green;
+            padding: 6px;
+            border: 2px solid blue;
+            color:black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>this is heading</h3>
+        <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odio rerum vitae possimus et doloremque earum dolorem repudiandae harum aliquid officiis architecto aperiam, magni maiores! Excepturi sapiente eius accusamus sunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia minima harum quo odit nesciunt optio neque ex repellat laborum dolores enim tempore fugiat porro voluptate, quam dolor in, dolore voluptatem.</p>
+        <a class="btn" href="https://google.com" target="_blank">read more</a>
+        <button class="btn" href="">contact us</button></div>
+        
+</body>
+
+</html>

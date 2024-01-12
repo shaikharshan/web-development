@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time in js</title>
+</head>
+<body>
+    <div class="container">
+        thsi is a container
+    </div>
+
+</body>
+<script>
+    let date = new Date();
+    console.log(date);
+    let reftime = new Date(0);
+    console.log(reftime);
+
+    // newDate(year,month ,date,hours,minutes,seconds,ms)
+    let time1 = new Date(2003,5,18,9,30,0);
+    console.log(time1);
+    let yr = date.getFullYear();
+    console.log(yr);
+    let mt = date.getMonth();
+    console.log(mt);
+    let dt = date.getDate();
+    console.log(dt);
+    let hr = date.getHours();
+    console.log(hr);
+    date.setDate(18);
+    console.log(date)
+    
+    // function add(){
+    //     let newTime = new Date();
+    //     console.log(`${newTime.getFullYear()}  ${newTime.getMonth()} ${newTime.getDate()}  ${newTime.getDay()}  ${newTime.getHours()}  ${newTime.getMinutes()}  ${newTime.getSeconds()}`)
+    //     clearInterval(clr);
+        
+    // }
+    // let clr = setInterval(add,1000);
+    
+</script>
+</html>

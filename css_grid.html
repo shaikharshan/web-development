@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grids</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 300px 150px 150px; */
+            /* better to use f units divides page in ratio */
+            /* grid-template-columns: 2fr 1fr 1fr; */
+            grid-template-columns: repeat(3,auto);
+           }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(92, 234, 189);
+            border: black;
+            color: white;
+            margin:3px;
+            padding-top: 8px;
+            border-radius: 30px;
+            transition: all 1s ease;
+        }
+            .item:hover{
+                transform: translateX(80px);
+                box-shadow: 3px 3px rgb(7, 48, 48) ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">this is item-1</div>
+        <div class="item" id="item-2">this is item-2</div>
+        <div class="item" id="item-3">this is item-3</div>
+        <div class="item" id="item-4">this is item-4</div>
+        <div class="item" id="item-5">this is item-5</div>
+        <div class="item" id="item-6">this is item-6</div>
+        <div class="item" id="item-7">this is item-7</div>
+        <div class="item" id="item-8">this is item-8</div>
+        <div class="item" id="item-9">this is item-9</div>
+    </div>
+</body>
+</html>

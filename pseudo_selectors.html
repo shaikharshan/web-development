@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors</title>
+    <style>
+        input{
+            display: block;
+            margin: auto;
+            width: 233px;
+        }
+        h3{
+            text-align: center;
+        }
+        /* for specific target in input */
+        input[type='text']{
+            border: 3px solid red;
+        }
+       /* pseudo selector for target anchor tag */
+        a[target='_blank']{
+            color: violet;
+        }
+        li:nth-child(3){
+            color: yellow;
+            background-color: green;
+        }
+        li:nth-child(2n+1){
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="no.php" class="fbox">
+        <h3>my form</h3>
+        <h3><a href="http://google.com" target="_blank">GO TO GOOGLE</a></h3>
+        <h3><a href="http://facebook.com" target="_self">go to facebook</a></h3>
+        <input type="text" placeholder="enter your name">
+        <input type="password" placeholder="enter your password">
+        <input type="button" value="submit">
+       <ul>
+
+           <li class="item" id="item-1">this is item 1</li>
+           <li class="item" id="item-2">this is item 2</li>
+           <li class="item" id="item-3">this is item 3</li>
+           <li class="item" id="item-4">this is item 4</li>
+           <li class="item" id="item-5">this is item 5</li>
+           <li class="item" id="item-6">this is item 6</li>
+       </ul> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css inclusion</title>
+    <!-- the code written in css sheet will drop in front of link -->
+    <!-- preference inline > internal . there is no relation between internal and external -->
+    <!-- internal inclusion of css  -->
+    <!-- if link was dine below internal css external result would have been displayed -->
+    <!-- if we want internal to take precedence however we have to write !important; -->
+    <style>
+        span{
+            color: aqua !important;
+        }
+        </style>
+        <link rel="stylesheet" href="css_basics.css">
+</head>
+
+<body>
+    <h3>css inclusion types</h3>
+    <p style="color : red;">this is a paragraph</p>    <!-- inline inclusion -->
+    <span>this is a span </span>
+    <span>this is also a span</span>
+</body>
+</html>

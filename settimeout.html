@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set time out clear time out</title>
+</head>
+<body>
+    <div class="container">
+        this is a box
+        <span id="time">
+            
+        </span>
+    </div>
+    <script>
+        console.log("hello")
+        //setTimeOut : runs a function once after a interval of  time
+        //clearTimeOut : runs a function repeatedly after a interval of  time
+        // function greet(name){
+        //     console.log("hello mr/mrs "+ name);
+        // }
+        // let clear = setTimeout(greet,2000,'arshan');//parameter can be given here or taken from user
+        // console.log(clear);
+        //note greet() is not written as we are not calling the function 
+        // clearTimeout(clear);    clears the setTimeout
+        // let clearId = setInterval(greet,1000)
+        // repeats after given time in ms
+        // clearInterval(clearId)
+        //for printing time
+        function displaytime(){
+            let time = new Date();
+            document.getElementById('time').innerHTML=time;
+            
+        }
+        setInterval(displaytime,1000);
+
+
+    </script>
+</body>
+</html>

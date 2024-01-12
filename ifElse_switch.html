@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else switch</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var o ='arshan'
+        //can be defined again and ddoes not show error
+        let t ='name1';
+        {
+            let t ='name2';
+            // is only valid for this block and cannot be defined again
+            console.log(t)
+    
+        }
+        console.log(t)
+        const a ='this cannot be changed'
+        console.log(a)
+        let marks = 76
+        if(marks<35)
+        {
+            console.log('failed')
+        }
+        else if(marks>75){
+            console.log('passed with distinction')
+        }
+        else{
+            console.log('passed')
+        }
+        let day='monday'
+        switch (day) {
+            case 'monday':
+                console.log(" this monday")
+                
+                break;
+            case 'tuesday':
+                console.log("tuesday")
+                
+                break;
+            case 'wed':
+                console.log("wed")
+                
+                break;
+            case 'thursday':
+                console.log("thursday")
+                
+                break;
+          
+        
+            default:
+            console.log("none")   
+            break;
+        }
+
+</script>
+</body>
+</html>

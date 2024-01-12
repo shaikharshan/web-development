@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .container{
+            display:flex;
+           
+            
+        }
+        .clas{
+            /* border: 3px solid red; */
+            text-align: center;
+            margin: 10px 15px;
+            background-color: rgb(99, 231, 73);
+            transition-property:all;
+            transition-duration: 0.5s;
+          
+        }
+        .clas:hover{
+            box-shadow: 5px 5px 3px green;
+            text-shadow: 1px 1px rgb(208, 255, 198);
+            border-radius: 10px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clas" id="class-1"><h2>this is class 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, molestiae ullam quasi laborum omnis, consequuntur recusandae repellat soluta amet, repellendus velit officiis enim incidunt eligendi blanditiis dignissimos qui architecto fugit ratione vero aliquid? Odio.</p></div>
+        <div class="clas" id="class-2"><h2>this is class 2</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam voluptatum sunt fuga quis quod. Nihil totam eveniet eligendi deleniti eius magni veniam? Iure quasi odio dolor, voluptatum asperiores unde ut distinctio nam quis.</p></div>
+        <div class="clas" id="class-3"><h2>this is class 3</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam voluptatum sunt fuga quis quod. Nihil totam eveniet eligendi deleniti eius magni veniam? Iure quasi odio dolor, voluptatum asperiores unde ut distinctio nam quis.</p></div>
+        <div class="clas" id="class-4"><h2>this is class 4</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam voluptatum sunt fuga quis quod. Nihil totam eveniet eligendi deleniti eius magni veniam? Iure quasi odio dolor, voluptatum asperiores unde ut distinctio nam quis.</p></div>
+    </div>
+</body>
+</html>

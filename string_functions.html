@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions
+    </title>
+</head>
+<body>
+    <script>
+        var str='this is a string'
+        var position = str.indexOf('a')
+        // gives first occurence
+        console.log(position)
+        // last occurence
+        position = str.lastIndexOf('is')
+        console.log(position)
+        //prints sliced string
+        var subStr = str.slice(1,6)
+        var subStr =str.substr(1,4)//first parameter tells start from second tells how many chars
+        console.log(subStr)
+        subStr = str.substring(1,6)//cant take negative values
+        console.log(subStr)
+        //for replacing 
+        var replaced = str.replace('string','arshan')
+        console.log(str)
+        console.log(replaced)
+        console.log(str.toUpperCase())
+        var strWithWhitSpaces='        hi i am         arshan     '
+        console.log(strWithWhitSpaces)
+        console.log(strWithWhitSpaces.trim())//removes all white spaces from beginnning and ending
+        console.log(str.charAt(2))
+        console.log(str.charCodeAt(2))
+    </script>
+</body>
+</html>

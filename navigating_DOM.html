@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigating the dom</title>
+</head>
+<body>
+    <!-- document object module -->
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact us</li>
+            <li>more about us</li>
+        </ul>
+    </div>
+    <div class="container">
+        another container
+    </div>
+    <script>
+       let main = document.getElementById('main');
+       console.log(main);
+       let nav=document.getElementById('nav');
+       console.log(nav);
+       console.log(nav.innerHTML);
+       let containers =document.getElementsByClassName('container');       
+
+       console.log(containers);
+       console.log(containers[0]);
+       console.log(containers[1]); //prints respective containers
+       //for acccessing css selectors 
+       let sel = document.querySelector('.container');
+       console.log('selector returns first class ',sel);
+       //nth child selectors can also be used
+       let sel2 = document.querySelectorAll(".container");
+       console.log("all",sel2);
+       //important
+       let sel3 = document.querySelectorAll('#nav>li');
+       console.log('li',sel3);
+       sel3[2].innerHTML="arshan";//change any value from here
+
+    //   let Get = document.getElementById('nav');
+    //    Get[4].innerHTML = 'arshan';
+
+    </script>
+</body>
+</html>

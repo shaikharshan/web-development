@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selectors</title>
+    <style>
+        body{
+        /* background-color: black; */
+        color:black;        
+        margin: 0;
+        padding: 0;
+       
+        
+    }
+    header::before{
+        content: "";
+        background: url(https://cdn.pixabay.com/photo/2022/07/06/08/59/landscape-7304666_960_720.jpg) no-repeat center center/cover;
+        position: absolute;
+        width: 100%;
+        height:100%;
+        opacity: 0.5;
+        z-index: -1;
+        top:0;
+        left: 0%;
+
+    }
+
+        .navigation{
+            display: flex;
+            /* justify-content: center; */
+           
+
+        }
+        li{
+            padding: 20px;
+            list-style: none;
+        
+        }
+        section{
+            margin: 5px 20px;
+            display: flex;
+            /* border:2px solid red; */
+            flex-direction: column;
+           text-align: center;
+            height: 500px;
+            align-self: center;
+            justify-content: flex-start;
+        }
+      
+        h1{
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li>home</li>
+                <li>about</li>
+                <li>sevices</li>
+                <li>contact us</li>
+            </ul>
+        </nav>
+        <hr>
+        <section>
+            <h1>welcome</h1>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, placeat minima nisi, modi eligendi illo animi consequatur ratione excepturi maxime aliquid mollitia eos, corporis atque debitis eum iusto veritatis. Repellat velit similique eius ipsam.</p>
+            
+            </section>
+    </header>    
+    <hr>
+</body>
+</html>

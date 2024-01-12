@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burger menu</title>
+    <style>
+        #btn{
+            cursor: pointer;
+
+        }
+        #btn:hover{
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="toggle()">burger</button>
+    <div class="container">
+        <ul id="bg">
+            <li>home</li>
+            <li>about us</li>
+            <li>services</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, tempora eveniet enim illum fuga quisquam eos, aliquam repellat impedit numquam voluptatum ex beatae esse fugiat ducimus eum consequuntur maiores voluptate labore alias modi quo.
+        </p>
+
+</body>
+<script>
+    function toggle(){
+        let menu = document.getElementById('bg')
+        if(bg.style.display != 'none'){
+            bg.style.transition ="0.5s ";
+            bg.style.transitionProperty ="all";
+            bg.style.display = 'none';
+            bg.style.transition = '1s'
+        }
+        else{
+            menu.style.transition =" 0.5s ";
+            menu.style.transitionProperty ="all";
+            bg.style.display = 'block';
+
+        }
+    }
+</script>
+</html>

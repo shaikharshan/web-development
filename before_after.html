@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before after uses</title>
+</head>
+<style>
+  *,*::after,*::before{
+    box-sizing: border-box;
+    
+    left:0;
+    right:0;
+  }
+  h3{
+    text-align: center;
+  }
+  html{
+        background-image: linear-gradient(to bottom right,rgba(76, 198, 214, 0.75),rgba(65, 65, 245, 0.75));
+        height: 999px;
+    }
+    h3::before{
+        content: open-quote;
+        font-size: 4rem;
+        color:blue;
+        opacity:0.5;
+    }
+    h3::after{
+        content: close-quote;
+        font-size: 4rem;
+        color:blue;
+        opacity:0.5;
+        height: 500px;
+        width: 50px;
+    }
+    a[cool-tool-tip]{
+        position: relative;
+    
+
+    }
+    a[cool-tool-tip]::after{
+        content: attr(cool-tool-tip);
+        display: block;
+        position: absolute;
+        left: 0.2rem;
+        font-size: large;
+        color: blue;
+        border: 2px solid green;
+        border-radius: 8px;
+        padding: 4px;
+       transform: scale(0);
+        white-space: nowrap;
+    }
+    a[cool-tool-tip]:focus::after,a[cool-tool-tip]:hover::after{
+       
+        transition: all 0.5s ease-in-out;
+        transform: scale(1);
+    }
+    #img1{
+        display: inline-block;
+        position:relative;
+    }
+    #img1::before{
+        content: "cool animation";
+    }
+    h2{
+        text-align: center;
+        position: relative;
+        
+        z-index: 5;
+    }
+    h2::after{
+        display: block;
+        content: "";
+        background-color: red;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+       
+        
+    }
+    h2::before{
+        display: block;
+        content: "";
+        background-color: red;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    
+        /* top: 5px; */
+
+    }
+    .card{
+        position: relative;
+    
+    }
+    .title{
+        display: inline-block;
+        position: absolute;
+        top: 8rem;
+        left:8rem;
+        color: white;
+        opacity: 0;
+    }
+    .body{
+        display: inline-block;
+        position: absolute;
+        top: 8rem;
+        left:3rem;
+        color: white;
+        opacity: 0;
+    }
+    #img2:hover,#img1:hover{
+        opacity: 1;
+    }
+
+  
+</style>
+<body>
+    <div class="container">
+        <!-- <h3>Be the change you wish to see in the world</h3> -->
+       
+    </div>
+    <div class="box">
+        <p>Lorem ipsum <a href='' cool-tool-tip="cool tool tip">dolor</a> sit amet consectetur adipisicing elit.</p>
+        
+    </div>
+    <h3>here is a heading</h3>
+    <div class="box">
+        <div class="card">
+            <img id="img1" src="//unsplash.it/500/500" alt="">
+            <h1 class="title">card title</h1>
+            <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione?</p>
+        </div>
+        <div class="card">
+            <img id ="img2" src="//unsplash.it/499/500" alt="">
+            <h1 class="title">card title</h1>
+            <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione?</p>
+        </div>
+    </div>
+    <h2>this is an underlined heading</h2>
+</body>
+</html>

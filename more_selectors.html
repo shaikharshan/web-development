@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        /*for just child*/
+        div >p{
+            color: yellow;
+            background-color: green;
+        }
+        div + p{
+            background-color: aqua;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+        <p>this is a para inside div</p>
+        </div>
+        <div class="box">
+            <ul>
+                <p>tihs is a para inside ul of div</p>
+            </ul>
+        </div>
+        <div class="box"></div>
+    </div>
+    <p>this is para outside div i.e div is sibling</p>
+</body>
+</html>

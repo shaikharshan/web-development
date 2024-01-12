@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>forms</h2>
+    <form action="backend.php">
+       <div>
+          name = <input type="name" name="Myname" >
+        </div> 
+        <br>
+        <div>
+          email =  <input type="email" name ="MyEmail" >
+        </div>
+        <br>
+        <div>
+            <label for="box">are you elegible:</label>    <!-- !!!very important!!! -->
+            <input type="checkbox" name="Mybox" id="box" checked >
+        </div>
+        <div>
+            GENDER : male : <input type="radio" name="MYgender" > female : <input type="radio" name="MYgender" >
+        </div><br>
+        <div>
+            <input type="submit" value="submit here"><br>
+            <input type="reset" value="reset here"><br>
+        </div>
+        <div>
+            write about yourself :<br><textarea name="myArea"  cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="car">CAR</label>
+            <select name="Mycar" id="car">
+                <option value="ind">indica</option>
+                <option value="mar" selected>maruti</option>
+            </select>
+        </div>
+        
+    </form>
+
+</body>
+</html>
